@@ -1,29 +1,64 @@
-# Github Actions katas
+# Kosli Tryout
 
-## Introduction
+This repository contains a sample application for experimenting with Kosli. It demonstrates basic setup, usage, and integration with Kosli's tools.
 
-This repository contains a set of exercises to learn Github Actions.
+## Prerequisites
 
-### Exercises
+- Node.js (version 16+ recommended)
+- npm or yarn
+- Kosli CLI (optional, for Kosli integration)
 
-* [Setup](./labs/setup.md)
-* [Build app](./labs/build-app.md)
-* [Extending the Pipeline](./labs/extend-pipeline.md)
-* [Storing Artifacts](./labs/storing-artifacts.md)
-* [Building Docker images](./labs/docker-image.md)
-* [Systems test](./labs/systems-test.md)
-* [Reusable workflows](./labs/reusable.md)
-* [Pull Request based workflow](./labs/pr-workflow.md)
-* [Build app on multiple environments](./labs/matrix-builds.md)
+## Setup
 
-### Rough exercises (not yet ready)
-* [Reusing build cache ](./labs/build-cache.md)
-* [Selfhosted runners](./labs/selfhosted-runner.md)
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/sofusalbertsen/kosli-tryout.git
+   cd kosli-tryout
+   ```
 
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-## Resources
+## Usage
 
-* [Understand a workflow file](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#understanding-the-workflow-file)
-* [List of starter workflow files for many different languages](https://github.com/actions/starter-workflows/tree/main/ci)
-* [A curated list of awesome things related to GitHub Actions](https://github.com/sdras/awesome-actions)
-* [Githubs own Hands On Labs](https://github.com/ps-actions-sandbox/ActionsFundamentals)
+To start the application locally:
+
+```sh
+npm start
+# or
+yarn start
+```
+
+To run tests:
+
+```sh
+npm test
+# or
+yarn test
+```
+
+## Kosli Integration
+
+If you want to try Kosli integration:
+
+1. Install the Kosli CLI:  
+   [Kosli CLI Installation Guide](https://docs.kosli.com/docs/cli/installation)
+
+2. Follow the documentation to connect your workflows.
+
+## Project Structure
+
+- `src/` - Application source code
+- `tests/` - Test files
+- `package.json` - Project configuration
+
+## License
+
+MIT License
+
+---
+For more information, see [Kosli Documentation](https://docs.kosli.com/).
