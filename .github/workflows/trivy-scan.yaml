@@ -3,8 +3,16 @@ on: push
 env: # Set the secret as an input
   docker_username: ${{ github.actor }} 
   docker_password: ${{ secrets.GITHUB_TOKEN }} #Nees to be set to be made available to the workflow
-  GIT_COMMIT: ${{ github.sha }}
   APP_NAME: ${{ github.event.repository.name }}
+  BUILD_NUMBER: ${{ github.run_number }}
+  GIT_REPO: ${{ github.repository }}
+  GIT_REPO_URL: ${{ github.event.repository.clone_url }}
+  GIT_BRANCH: ${{ github.ref_name }}
+  GIT_COMMIT: ${{ github.sha }}
+  BUILD_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+  COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+  KOSLI_API_KEY: ${{ secrets.KOSLI_API_KEY }} # Set the Kosli API key as a secret in your repository
+  KOSLI_ORG: sofusalbertsen
 jobs:
   Build:
     runs-on: ubuntu-latest
