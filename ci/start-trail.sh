@@ -3,4 +3,4 @@
 # Usage: ./start-trail.sh
 set -e
 
-kosli begin trail ${GIT_COMMIT} --flow ${APP_NAME} --description "build number ${BUILD_NUMBER}"
+kosli begin trail ${GIT_COMMIT} --description "build number ${BUILD_NUMBER}"
