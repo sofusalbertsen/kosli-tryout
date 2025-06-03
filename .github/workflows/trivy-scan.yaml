@@ -65,7 +65,7 @@ jobs:
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: 'ghcr.io/${{ github.actor }}/${{ github.repository }}:latest'
+        image-ref: 'ghcr.io/${{ github.repository }}:latest'
         format: 'table'
         #exit-code: '1' #Defaults to 0 meaning that the action will not fail the build if vulnerabilities are found
         ignore-unfixed: true
