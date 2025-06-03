@@ -11,7 +11,7 @@ env: # Set the secret as an input
   GIT_COMMIT: ${{ github.sha }}
   BUILD_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
   COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
-  KOSLI_API_KEY: ${{ secrets.KOSLI_API_KEY }} # Set the Kosli API key as a secret in your repository
+  KOSLI_API_TOKEN: ${{ secrets.KOSLI_API_KEY }} # Set the Kosli API token as a secret in your repository
   KOSLI_ORG: sofusalbertsen
   KOSLI_FLOW: micronaut
   
