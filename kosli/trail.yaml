@@ -1,3 +1,7 @@
 trail:
   artifacts:
     - name: micronaut-app
+  attestations:
+    - name: unit-tests
+      type: junit
+
