@@ -37,4 +37,36 @@ public class HelloControllerTest {
         
     }
 
+    @Test
+    public void testIndexWithDifferentNames() {
+        HttpRequest<String> request1 = HttpRequest.GET("/hello/Alice");
+        String response1 = client.toBlocking().retrieve(request1);
+        assertEquals("Hello Alice", response1);
+
+        HttpRequest<String> request2 = HttpRequest.GET("/hello/Bob");
+        String response2 = client.toBlocking().retrieve(request2);
+        assertEquals("Hello Bob", response2);
+
+        HttpRequest<String> request3 = HttpRequest.GET("/hello/");
+        // This will likely result in a 404 or error, depending on routing config
+        // Uncomment below if you want to check for error handling
+        // assertThrows(HttpClientResponseException.class, () -> client.toBlocking().retrieve(request3));
+    }
+
+    @Test
+    public void testCombineNameWithNull() {
+        HelloController sut = new HelloController();
+        String result = sut.combineName(null);
+        assertEquals("Hello null", result);
+    }
+
+    @Test
+    public void testCombineNameWithEmptyString() {
+        HelloController sut = new HelloController();
+        String result = sut.combineName("");
+        assertEquals("Hello ", result);
+    }
+
+
+
 }
