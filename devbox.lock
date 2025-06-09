@@ -43,6 +43,14 @@
           "store_path": "/nix/store/skkjhg37740s304q0cx492158gqcg44g-zulu-ca-jdk-11.0.24"
         }
       }
+    },
+    "kubectl": {
+      "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e?narHash=sha256-BHmgfHlCJVNisJShVaEmfDIr%2FIp58i%2F4oFGlD1iK6lk%3D#kubectl",
+      "source": "nixpkg"
+    },
+    "minikube": {
+      "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e?narHash=sha256-BHmgfHlCJVNisJShVaEmfDIr%2FIp58i%2F4oFGlD1iK6lk%3D#minikube",
+      "source": "nixpkg"
     }
   }
 }

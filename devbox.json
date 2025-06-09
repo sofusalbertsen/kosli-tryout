@@ -3,7 +3,9 @@
   "packages": [
     "gradle@6",
     "jdk@11",
-    "binutils"
+    "binutils",
+    "kubectl",
+    "minikube"
   ],
     "shell": {
       "init_hook": [
