@@ -20,14 +20,18 @@ jobs:
     runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
+      - name: setup-kosli-cli
+        uses: kosli-dev/setup-cli-action@v2
+      - name: Update Flow
+        run: ci/update-flow.sh
+      - name: Update policy
+        run: ci/update-policy.sh
       - name: Clone down repository
         uses: actions/checkout@v4       
       - name: Build application
         run: ci/build-app.sh
       - name: Test
         run: ci/unit-test-app.sh
-      - name: setup-kosli-cli
-        uses: kosli-dev/setup-cli-action@v2
       - name: Kosli start trail
         run: ci/start-trail.sh
       - name: Kosli attest application

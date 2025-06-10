@@ -1,0 +1,10 @@
+# prod-policy.yaml
+_schema: https://kosli.com/schemas/policy/environment/v1
+artifacts: # the rules apply to artifacts in an environment snapshot
+  provenance:
+    required: true # all artifacts must have provenance
+  attestations:
+    # - name: dependency-scan # all artifacts must have dependency-scan attestation
+    #   type: '*' # any attestation type
+    - name: unit-test # all artifacts must have unit-test attestation
+      type: junit # must be a 'junit' attestation type

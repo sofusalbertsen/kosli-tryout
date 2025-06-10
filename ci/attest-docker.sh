@@ -25,4 +25,4 @@ if [ -z "$KOSLI_FLOW" ]; then
     export KOSLI_FLOW="micronaut"
 fi
   
-kosli attest artifact --trail=${GIT_COMMIT} --artifact-type=docker --commit-url=${COMMIT_URL} --commit=${GIT_COMMIT} "ghcr.io/$docker_username/${APP_NAME}:1.0-${GIT_COMMIT::8}" --build-url=${BUILD_URL} --name=micronaut-app
+kosli attest artifact --trail=${GIT_COMMIT} --artifact-type=docker --commit-url=${COMMIT_URL} --commit=${GIT_COMMIT} "ghcr.io/$docker_username/${APP_NAME}:1.0-${GIT_COMMIT::8}" --build-url=${BUILD_URL} --name=micronaut-container
