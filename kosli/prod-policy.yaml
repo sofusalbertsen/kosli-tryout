@@ -6,5 +6,5 @@ artifacts: # the rules apply to artifacts in an environment snapshot
   attestations:
     # - name: dependency-scan # all artifacts must have dependency-scan attestation
     #   type: '*' # any attestation type
-    - name: unit-test # all artifacts must have unit-test attestation
+    - name: unit-tests # all artifacts must have unit-test attestation
       type: junit # must be a 'junit' attestation type
