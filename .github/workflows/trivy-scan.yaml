@@ -84,7 +84,7 @@ jobs:
     - name: Generate SBOM for the docker image
       uses: anchore/sbom-action@v0
       with:
-        image: ${{ env.IMAGE }}:latest
+        image: ghcr.io/${{ env.IMAGE }}:latest
         format: 'spdx-json'
         output-file: 'sbom.spdx.json'
         upload-artifact: false
