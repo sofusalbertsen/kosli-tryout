@@ -130,4 +130,19 @@ jobs:
         name: code
         path: .
     - name: Execute performance test
-      run: bash ci/performance-test.sh          
+      run: bash ci/performance-test.sh     
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: [Docker-image, Security-scan, Component-test, Performance-test]
+    steps:
+    - name: Download code
+      uses: actions/download-artifact@v4
+      with:
+        name: code 
+        path: .
+    - name: Deploy to production
+      run: bash ci/start-application.sh
+    - name: Kosli snapshot environment
+      run: ci/snapshot-env.sh
+    - name: stop production environment
+      run: ci/stop-application.sh
