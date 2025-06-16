@@ -143,6 +143,6 @@ jobs:
     - name: Deploy to production
       run: bash ci/start-application.sh
     - name: Kosli snapshot environment
-      run: ci/snapshot-env.sh
+      run: bash ci/snapshot-env.sh
     - name: stop production environment
-      run: ci/stop-application.sh
+      run: bash ci/stop-application.sh
