@@ -5,7 +5,8 @@
     "jdk@11",
     "binutils",
     "kubectl",
-    "minikube"
+    "minikube",
+    "kubernetes-helm-wrapped@latest"
   ],
     "shell": {
       "init_hook": [

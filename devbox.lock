@@ -48,6 +48,54 @@
       "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e?narHash=sha256-BHmgfHlCJVNisJShVaEmfDIr%2FIp58i%2F4oFGlD1iK6lk%3D#kubectl",
       "source": "nixpkg"
     },
+    "kubernetes-helm-wrapped@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#kubernetes-helm-wrapped",
+      "source": "devbox-search",
+      "version": "3.17.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hzy5w7dzcjgl25qhvnlaq6a495ns98yp-helm-3.17.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hzy5w7dzcjgl25qhvnlaq6a495ns98yp-helm-3.17.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yhvsia58zjxagkivxc5v56jkw8sl49kb-helm-3.17.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yhvsia58zjxagkivxc5v56jkw8sl49kb-helm-3.17.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gcdjzgcm6i0ibf485697rwd0f12s5xyq-helm-3.17.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gcdjzgcm6i0ibf485697rwd0f12s5xyq-helm-3.17.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ih5m6g033nspbvg80hypv4aqpxgwrkjz-helm-3.17.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ih5m6g033nspbvg80hypv4aqpxgwrkjz-helm-3.17.3"
+        }
+      }
+    },
     "minikube": {
       "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e?narHash=sha256-BHmgfHlCJVNisJShVaEmfDIr%2FIp58i%2F4oFGlD1iK6lk%3D#minikube",
       "source": "nixpkg"

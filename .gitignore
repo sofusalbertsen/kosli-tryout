@@ -29,3 +29,5 @@ app/bin/
 .DS_Store
 labs/.DS_Store
 secret.txt
+koslicommands.sh
+secret.txt
