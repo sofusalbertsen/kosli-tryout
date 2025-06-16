@@ -140,6 +140,8 @@ jobs:
       with:
         name: code 
         path: .
+    - name: setup-kosli-cli
+      uses: kosli-dev/setup-cli-action@v2
     - name: Deploy to production
       run: bash ci/start-application.sh
     - name: Kosli snapshot environment
